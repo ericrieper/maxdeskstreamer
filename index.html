@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Maxdeskstreamer : Max MSP tools to network stream a desktop capture" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Maxdeskstreamer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ericrieper/maxdeskstreamer">View on GitHub</a>
+
+          <h1 id="project_title">Maxdeskstreamer</h1>
+          <h2 id="project_tagline">Max MSP tools to network stream a desktop capture</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ericrieper/maxdeskstreamer/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ericrieper/maxdeskstreamer/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="maxdeskstreamer" class="anchor" href="#maxdeskstreamer"><span class="octicon octicon-link"></span></a>maxdeskstreamer</h1>
+
+<p>Max MSP tools to network stream a desktop capture and pipe through Syphon.</p>
+
+<p><img src="https://raw.githubusercontent.com/ericrieper/maxdeskstreamer/master/misc/serverscreen.png" alt="alt text" title="Server screenshot"></p>
+
+<p><img src="https://raw.githubusercontent.com/ericrieper/maxdeskstreamer/master/misc/clientscreen.png" alt="alt text" title="Client screenshot"></p>
+
+<p>Uses <code>jit.net.send</code> and <code>jit.net.receive</code> to stream a <code>jit.desktop</code> matrix across local or remote network.</p>
+
+<h2>
+<a name="server-instructions" class="anchor" href="#server-instructions"><span class="octicon octicon-link"></span></a>Server Instructions</h2>
+
+<ul>
+<li>Set your display Width and Height
+
+<ul>
+<li>Setting Width and Height lower than your display resolution will stream a cropped section of the display.</li>
+</ul>
+</li>
+<li>Set IP and Port</li>
+<li>Set Frames Per Second for stream
+
+<ul>
+<li>
+<code>jit.net.send</code> is very high bandwidth so using a slow FPS (2-8) is more reliable. Using a fast FPS causes both dropped frames and substantial latency.</li>
+</ul>
+</li>
+<li>You can keep settings by clicking <code>Store Settings</code> and recall them with <code>Reset</code>. To save them for next time the patch is run, click <code>Store Settings</code> and then save the patch.</li>
+</ul><h2>
+<a name="client-instructions" class="anchor" href="#client-instructions"><span class="octicon octicon-link"></span></a>Client Instructions</h2>
+
+<ul>
+<li>Set incoming IP address or leave as "ALL"</li>
+<li>Set incoming Port Number</li>
+<li>Set <code>servername</code> for Syphon server- It will show up as "Max - [servername]' in your Syphon client.</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Maxdeskstreamer maintained by <a href="https://github.com/ericrieper">ericrieper</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
