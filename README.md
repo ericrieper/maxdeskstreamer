@@ -3,7 +3,9 @@ maxdeskstreamer
 
 Max MSP tools to network stream a desktop capture.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+
+![alt text](https://raw.githubusercontent.com/ericrieper/maxdeskstreamer/master/misc/serverscreen.png "Server screenshot")
 
 Uses `jit.net.send` and `jit.net.receive` to stream a `jit.desktop` matrix across local or remote network.
 
