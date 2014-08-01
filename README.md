@@ -17,6 +17,6 @@ Uses `jit.net.send` and `jit.net.receive` to stream a `jit.desktop` matrix acros
 * You can keep settings by clicking `Store Settings` and recall them with `Reset`. To save them for next time the patch is run, click `Store Settings` and then save the patch.
 
 ##Client Instructions
-* Set incoming IP address or leave as "ALL"
+* Set incoming IP address or leave as "ANY"
 * Set incoming Port Number
 * Set `servername` for Syphon server- It will show up as "Max - [servername]' in your Syphon client.
